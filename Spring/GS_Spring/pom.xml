@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.javacourse</groupId>
+    <artifactId>GS_Spring</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Spring GS_Spring</name>
+
+    <modules>
+        <module>GS_Spring_1_IoC</module>
+        <module>GS_Spring_2_Annotation</module>
+        <module>GS_Spring_3_AnnotationConfig</module>
+        <module>GS_Spring_4_Lifecycle</module>
+        <module>GS_Spring_5_PropertyConfigurer</module>
+        <module>GS_Spring_6_Scope</module>
+        <module>GS_Spring_7_MethodInject</module>
+        <module>GS_Spring_8_Aware</module>
+        <module>GS_Spring_9_Resource</module>
+        <module>GS_Spring_10_Validation</module>
+        <module>GS_Spring_11_BeanValidation</module>
+        <module>GS_Spring_13_EL_Function</module>
+        <module>GS_Spring_14_AOP_Advice</module>
+        <module>GS_Spring_15_AOP_Advisor</module>
+        <module>GS_Spring_16_AOP_AspectJ</module>
+        <module>GS_Spring_17_JUnit</module>
+        <module>GS_Spring_18_AOP_AspectJPointcut_XML</module>
+        <module>GS_Spring_19_Transaction</module>
+        <module>GS_Spring_21_JDBC_DAO</module>
+        <module>GS_Spring_22_Hibernate</module>
+        <module>GS_Spring_23_HibernateAspect</module>
+        <module>GS_Spring_24_Lookup</module>
+        <module>GS_SubscriptionPortlet</module>
+    </modules>
+
+    
+</project>

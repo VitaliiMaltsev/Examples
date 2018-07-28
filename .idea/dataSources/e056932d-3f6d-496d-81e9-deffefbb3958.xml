@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - javacourse@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
+    <root id="1"/>
+    <database id="2" parent="1" name="javacourse">
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="bank">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="region">
+      <Visible>1</Visible>
+    </schema>
+    <sequence id="5" parent="3" name="account_id_seq"/>
+    <sequence id="6" parent="3" name="person_id_seq"/>
+    <sequence id="7" parent="3" name="transfer_id_seq"/>
+    <table id="8" parent="3" name="account"/>
+    <table id="9" parent="3" name="person"/>
+    <table id="10" parent="3" name="transfer"/>
+    <sequence id="11" parent="4" name="jc_catalog_catalog_id_seq"/>
+    <sequence id="12" parent="4" name="jc_city_city_id_seq"/>
+    <sequence id="13" parent="4" name="jc_region_region_id_seq"/>
+    <sequence id="14" parent="4" name="jc_region_standalone_region_id_seq"/>
+    <table id="15" parent="4" name="jc_catalog"/>
+    <table id="16" parent="4" name="jc_city"/>
+    <table id="17" parent="4" name="jc_region"/>
+    <table id="18" parent="4" name="jc_region_standalone"/>
+    <column id="19" parent="8" name="id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;bank.account_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="20" parent="8" name="owner">
+      <DataType>int8(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="21" parent="8" name="account_pkey">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="22" parent="8" name="fk_8skvobhovf34aqj9arj4hu38a">
+      <ColNames>owner</ColNames>
+      <RefTableName>person</RefTableName>
+      <RefKeyName>person_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="23" parent="9" name="id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;bank.person_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="24" parent="9" name="birth_date">
+      <DataType>date(13)|91s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="9" name="first_name">
+      <DataType>varchar(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="9" name="last_name">
+      <DataType>varchar(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="27" parent="9" name="person_pkey">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="10" name="id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;bank.transfer_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="29" parent="10" name="amount">
+      <DataType>numeric(19,2 digit)|2s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="10" name="comment">
+      <DataType>varchar(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="10" name="recievers_account">
+      <DataType>int8(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="10" name="senders_account">
+      <DataType>int8(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="33" parent="10" name="transfer_pkey">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="34" parent="10" name="fk_4vsb461vqv0urva8l4jpyadk9">
+      <ColNames>recievers_account</ColNames>
+      <RefTableName>account</RefTableName>
+      <RefKeyName>account_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="35" parent="10" name="fk_a1r9m3uoujhlwiuo7o3cfvvon">
+      <ColNames>senders_account</ColNames>
+      <RefTableName>account</RefTableName>
+      <RefKeyName>account_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="36" parent="15" name="catalog_id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;region.jc_catalog_catalog_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="37" parent="15" name="catalog_name">
+      <DataType>varchar(255)|12s</DataType>
+    </column>
+    <column id="38" parent="15" name="parent_id">
+      <DataType>int8(19)|-5s</DataType>
+    </column>
+    <key id="39" parent="15" name="jc_catalog_pkey">
+      <ColNames>catalog_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="15" name="fk_c07note3q90oyi8rg9h5er7le">
+      <ColNames>parent_id</ColNames>
+      <RefTableName>jc_catalog</RefTableName>
+      <RefKeyName>jc_catalog_pkey</RefKeyName>
+      <RefColNames>catalog_id</RefColNames>
+    </foreign-key>
+    <column id="41" parent="16" name="city_id">
+      <DataType>serial(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;region.jc_city_city_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="42" parent="16" name="city_name">
+      <DataType>varchar(255)|12s</DataType>
+    </column>
+    <column id="43" parent="16" name="region_id">
+      <DataType>int8(19)|-5s</DataType>
+    </column>
+    <key id="44" parent="16" name="jc_city_pkey">
+      <ColNames>city_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="45" parent="16" name="fk_llmvs8rt74d2rmlrjyf6fw3gu">
+      <ColNames>region_id</ColNames>
+      <RefTableName>jc_region</RefTableName>
+      <RefKeyName>jc_region_pkey</RefKeyName>
+      <RefColNames>region_id</RefColNames>
+    </foreign-key>
+    <column id="46" parent="17" name="region_id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;region.jc_region_region_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="47" parent="17" name="region_name">
+      <DataType>varchar(255)|12s</DataType>
+    </column>
+    <key id="48" parent="17" name="jc_region_pkey">
+      <ColNames>region_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="18" name="region_id">
+      <DataType>bigserial(19)|-5s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>nextval(&apos;region.jc_region_standalone_region_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="50" parent="18" name="region_name">
+      <DataType>varchar(255)|12s</DataType>
+    </column>
+    <key id="51" parent="18" name="jc_region_standalone_pkey">
+      <ColNames>region_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

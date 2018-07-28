@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - javacourse@localhost" uuid="e056932d-3f6d-496d-81e9-deffefbb3958">
+      <database-info product="PostgreSQL" version="9.3.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.3 JDBC4 (build 1100)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
+      <introspection-schemas>javacourse:*</introspection-schemas>
+      <resolve-scope>javacourse:bank,pg_catalog,public,region</resolve-scope>
+      <unqualified-resolve-schemas>javacourse:bank,pg_catalog,public,region</unqualified-resolve-schemas>
+    </data-source>
+    <data-source name="dataSource" uuid="ccd4264e-5a46-4b18-9b42-18c7ca6385bd">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>${jdbc.username}</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="ecf130c7-3fe3-4274-96a8-7fd4b4f97f72">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="ca46de7c-6232-4925-962a-aca5fc9be360">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="b7c46f0a-8ffc-438f-8f65-4abd54fdc800">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="07636944-463c-4ddd-8763-3d486ed89ef3">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>sa</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="6b21f875-a633-4b92-a460-fe1a7a600c36">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="diplomDS" uuid="b503f192-e213-4767-89d5-a00777c29c5b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="9697a84d-d56c-40dc-9a94-2f16797810d9">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="4afd29b1-414d-48de-93a3-b343a2e6e924">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="jdbc/java_backend" uuid="f749fe71-7f6d-4d8f-857c-27ca2866e2e6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="48e4b4cd-dfe3-40fb-a936-6a66adb86830">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="6fd43117-34d8-4c6f-8815-66b20d0a7e20">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="realmediaDS" uuid="9e99b418-4c61-4dba-b831-57f52679ec80">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="81080180-fe6b-4262-adc1-81e7972dc7c2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="0fa61f74-28d8-43a5-9462-c9e87d5f415f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="9f866d6c-9719-4936-9a9c-f4b9b1537767">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="jdbc/securityrealm" uuid="5862e9ca-576d-4142-87d4-de94f7dfd9c0">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="56aa59f9-1cd7-4393-9fdc-94242d787296">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="d0db842a-f100-4b8b-ad67-910640f4cd3b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>postgres</user-name>
+    </data-source>
+    <data-source name="diplomDS" uuid="4d5f87e5-2601-4a98-9690-ee4b251b8192">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="9a7d4aac-be13-4d18-839a-6ea9b6332795">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="b5e19c6e-9018-4392-a29b-e4bf13ab7f24">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="e3afb75a-8c53-41ba-ac54-565d4ca442d2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="b9342dbf-288d-475b-a327-6c172072793d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="realmediaDS" uuid="20b7510b-1d1e-488c-926a-4e2e21c8a9d3">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="jdbc/regionDS" uuid="71208e68-cef2-476a-be55-d15bfabfd955">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="dataSource" uuid="6de21af9-3017-4588-a0d5-eb7a4a6c09eb">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Java-course@localhost" uuid="ed67f865-0ea1-49be-a049-4655866754af">
+      <database-info product="PostgreSQL" version="10.4" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>Java-course:bookstore,payment_joined,payment_per_class,payment_single,public,region</introspection-schemas>
+    </data-source>
+  </component>
+</project>

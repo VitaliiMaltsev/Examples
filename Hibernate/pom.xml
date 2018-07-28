@@ -1,0 +1,27 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.javacourse</groupId>
+    <artifactId>hibernate</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Hibernate</name>
+
+    <modules>
+        <module>part1/hibernate-config-xml-mapping-annotations</module>
+        <module>part1/hibernate-many-to-many</module>
+        <module>part1/hibernate-many-to-one</module>
+        <module>part1/hibernate-one-to-one</module>
+        <module>part1/hibernate-criteria</module>
+        <module>part1/hibernate-crud</module>
+        <module>part2/hibernate-column-transformer</module>
+        <module>part2/hibernate-second-level-cache</module>
+        <module>part2/hibernate-inheritance-joined</module>
+        <module>part2/hibernate-inheritance-table-per-class</module>
+        <module>part2/hibernate-inheritance-single-table</module>
+        <module>part2/hibernate-recursive-parent-entity</module>
+    </modules>
+
+</project>

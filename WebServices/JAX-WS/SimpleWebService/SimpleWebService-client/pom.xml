@@ -1,0 +1,110 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>edu.javacourse</groupId>
+        <artifactId>examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../../../</relativePath>
+    </parent>
+
+    <groupId>edu.javacourse.web-services</groupId>
+    <artifactId>SimpleWebService-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>WebServices SimpleWebService-client</name>
+
+    <profiles>
+        <profile>
+            <id>win</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <tool.wsimport>${java.home}/bin/wsimport.exe</tool.wsimport>
+            </properties>
+        </profile>
+        <profile>
+            <id>nix</id>
+            <activation>
+                <os>
+                    <family>!windows</family>
+                </os>
+            </activation>
+            <properties>
+                <tool.wsimport>${java.home}/bin/wsimport</tool.wsimport>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    <dependency>
+        <groupId>com.sun.xml.ws</groupId>
+        <artifactId>jaxws-tools</artifactId>
+        <version>2.3.0.1</version>
+    </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <verbose>true</verbose>
+                    <compilerArgs>
+                        <arg>-XDignore.symbol.file=true</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jvnet.jax-ws-commons</groupId>
+                <artifactId>jaxws-maven-plugin</artifactId>
+                <version>2.3.1-b20141126.1000</version>
+
+                <executions>
+
+                    <execution>
+
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <id>wsimport-generate-SimpleWebService</id>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>${tool.wsimport}</executable>
+                    <vmArgs>
+                        <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                    </vmArgs>
+                    <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+                    <xnocompile>true</xnocompile>
+                    <verbose>true</verbose>
+                    <extension>true</extension>
+                    <wsdlFiles>
+                        <wsdlFile>SimpleWebService.wsdl</wsdlFile>
+                    </wsdlFiles>
+                    <wsdlLocation>http://localhost:8080/SimpleWebService-ejb-1.0-SNAPSHOT/SimpleWebService?wsdl</wsdlLocation>
+                    <!--<args>-->
+                    <!--<arg>-J-Djavax.xml.accessExternalDTD=file</arg>-->
+                    <!--</args>-->
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

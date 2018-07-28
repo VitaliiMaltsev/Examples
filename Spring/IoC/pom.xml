@@ -1,0 +1,21 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.javacourse.spring</groupId>
+    <artifactId>ioc</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Spring IoC</name>
+
+    <modules>
+        <module>IoC-01-Simple-Bean</module>
+        <module>IoC-02-Inheritance</module>
+        <module>IoC-03-Instantiation</module>
+        <module>IoC-04-Scope</module>
+        <module>IoC-05-Lazy-Init</module>
+        <module>IoC-06-Init-Destroy</module>
+    </modules>
+
+</project>

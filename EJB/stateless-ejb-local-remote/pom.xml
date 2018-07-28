@@ -1,0 +1,20 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>edu.javacourse.ejb</groupId>
+    <artifactId>stateless-ejb-local-remote</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>EJB Stateless Local and Remote</name>
+
+    <modules>
+        <module>ear-ejb</module>
+        <module>ear-client</module>
+        <module>war-ejb</module>
+        <module>war-client</module>
+        <module>lib</module>
+    </modules>
+
+</project>
