@@ -36,7 +36,12 @@
         <module name="ejb-lib-module" />
         <module name="ejb-war-module" />
         <module name="ejb-war2-module" />
+        <module name="Expomap" />
         <module name="GS_JSF_2" />
+        <module name="GS_Spring_001" />
+        <module name="GS_Spring_002" />
+        <module name="GS_Spring_003" />
+        <module name="GS_Spring_006" />
         <module name="GS_Spring_10_Validation" />
         <module name="GS_Spring_11_BeanValidation" />
         <module name="GS_Spring_13_EL_Function" />
@@ -85,8 +90,8 @@
         <module name="IoC-04-Scope" />
         <module name="IoC-05-Lazy-Init" />
         <module name="ioc-05-lazy-init" />
-        <module name="IoC-06-Init-Destroy" />
         <module name="ioc-06-init-destroy" />
+        <module name="IoC-06-Init-Destroy" />
         <module name="jdbc" />
         <module name="JDBC" />
         <module name="jms-ear" />
@@ -207,8 +212,13 @@
       <module name="ejb-war-module" target="1.7" />
       <module name="ejb-war2-module" target="1.7" />
       <module name="examples" target="1.7" />
+      <module name="Expomap" target="1.5" />
       <module name="GS_JSF_2" target="1.7" />
       <module name="GS_Spring" target="1.5" />
+      <module name="GS_Spring_001" target="9" />
+      <module name="GS_Spring_002" target="1.5" />
+      <module name="GS_Spring_003" target="1.5" />
+      <module name="GS_Spring_006" target="1.5" />
       <module name="GS_Spring_10_Validation" target="1.5" />
       <module name="GS_Spring_11_BeanValidation" target="1.5" />
       <module name="GS_Spring_13_EL_Function" target="1.5" />
@@ -302,6 +312,7 @@
       <module name="managed-executor-service" target="1.7" />
       <module name="managed-scheduled-executor-service" target="1.7" />
       <module name="managed-thread-factory" target="1.7" />
+      <module name="MVC" target="1.5" />
       <module name="MyBatis" target="1.5" />
       <module name="Portlet" target="1.5" />
       <module name="rest-context" target="1.7" />

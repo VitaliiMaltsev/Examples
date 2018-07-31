@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/users"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/users?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useEncoding=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="mysql"/>
+        <property name="password" value="mysql"/>
     </bean>
 
     <tx:annotation-driven transaction-manager="txManager"/>
@@ -21,11 +21,15 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan" value="com.gemini.spring.entity"/>
         <property name="hibernateProperties">
-            <value>
-                hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
-                hibernate.show_sql=true
-                <!--hibernate.hbm2ddl.auto=create -->
-            </value>
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+            <!--<value>-->
+                <!--hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect-->
+                <!--hibernate.show_sql=true-->
+                <!--&lt;!&ndash;hibernate.hbm2ddl.auto=create &ndash;&gt;-->
+            <!--</value>-->
         </property>
     </bean>
 

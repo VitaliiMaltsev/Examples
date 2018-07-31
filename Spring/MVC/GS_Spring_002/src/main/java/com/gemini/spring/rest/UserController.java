@@ -8,6 +8,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -21,19 +22,19 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(method = RequestMethod.GET, value = "/users.html")
-    public String getAllUsers(ModelMap model) {
+    @RequestMapping(method = RequestMethod.GET, value = "/users")
+    public @ResponseBody List<User> getAllUsers(ModelMap model) {
         List<User> users = userService.getAll();
-        model.put("users", users);
-        return "users";
+//        model.put("users", users);
+        return users;
     }
 
 
-    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}.html")
-    public String getUser(@PathVariable("id") String userId, ModelMap model) {
+    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}")
+    public @ResponseBody User getUser(@PathVariable("id") String userId, ModelMap model) {
         User user = userService.getById(Long.parseLong(userId));
-        model.put("user", user);
-        return "user";
+//        model.put("user", user);
+        return user;
     }
 
 }

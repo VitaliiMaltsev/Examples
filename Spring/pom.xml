@@ -34,6 +34,7 @@
         <module>IoC</module>
         <module>JDBC</module>
         <module>GS_Spring</module>
+        <module>MVC</module>
     </modules>
 
 </project>

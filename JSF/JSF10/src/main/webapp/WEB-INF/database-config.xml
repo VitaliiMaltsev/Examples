@@ -4,11 +4,11 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName" value="java:/jdbc/JavaCourse"/>
-        <property name="lookupOnStartup" value="true"/>
-        <property name="cache" value="true"/>
-        <property name="proxyInterface" value="javax.sql.DataSource"/>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/users?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useEncoding=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="mysql"/>
+        <property name="password" value="mysql"/>
     </bean>
 
     <bean name="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
