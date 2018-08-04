@@ -5,9 +5,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>RRRRR</title>
 </head>
 <body>
-<% response.sendRedirect("/books"); %>
+chnhjnynj
+<% response.sendRedirect("books"); %>
 </body>
 </html>

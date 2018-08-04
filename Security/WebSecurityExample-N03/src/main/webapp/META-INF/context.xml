@@ -8,10 +8,10 @@
               auth="Container"
               type="javax.sql.DataSource"
               maxActive="100" maxIdle="30" maxWait="10000"
-              username="root"
-              password="root"
+              username="mysql"
+              password="mysql"
               driverClassName="com.mysql.jdbc.Driver"
-              url="jdbc:mysql://localhost/securityrealm"/>
+              url="jdbc:mysql://localhost:3306/securityrealm?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useEncoding=true&amp;characterEncoding=UTF-8"/>
 
     <Realm localDataSource="true" className="org.apache.catalina.realm.DataSourceRealm"
            dataSourceName="jdbc/securityrealm"

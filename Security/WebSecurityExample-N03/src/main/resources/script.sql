@@ -16,7 +16,11 @@ create table user_roles (
 INSERT INTO users (user_name, user_pass) VALUES ('admin', 'admin');
 INSERT INTO users (user_name, user_pass) VALUES ('user', 'user');
 
-
+-- //not correct
 INSERT INTO user_roles (user_name, role_name) VALUES ('admin' 'user');
-INSERT INTO user_roles (user_name, role_name) VALUES ('admin', 'administrator');
+INSERT INTO user_roles (user_name, role_name) VALUES ('admin', 'administrator');//not correct
 INSERT INTO user_roles (user_name, role_name) VALUES ('user', 'user');
+-- //correct
+INSERT INTO `securityrealm`.`user_roles` (`user_name`, `role_name`) VALUES ('admin', 'user');
+INSERT INTO `securityrealm`.`user_roles` (`user_name`, `role_name`) VALUES ('admin', 'administrator');
+INSERT INTO `securityrealm`.`user_roles` (`user_name`, `role_name`) VALUES ('user', 'user')
