@@ -17,13 +17,13 @@
     <c:when test="${pageContext.request.userPrincipal ne null}">
         <h3>Hello ${pageContext.request.userPrincipal.name}, welcome to java-course book store!</h3>
 
-        <a href="/books">Home</a> &nbsp;&nbsp;
+        <a href="books">Home</a> &nbsp;&nbsp;
 
         <c:if test='<%= request.isUserInRole("administrator") %>'>
-            <a href="/admin">Manage books</a> &nbsp;&nbsp;
+            <a href="admin">Manage books</a> &nbsp;&nbsp;
         </c:if>
 
-        <a href="/books?logout=true">Logout</a>
+        <a href="books?logout=true">Logout</a>
 
 
     </c:when>

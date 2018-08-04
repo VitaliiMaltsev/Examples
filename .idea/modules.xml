@@ -7,13 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/DWR/DWR.iml" filepath="$PROJECT_DIR$/DWR/DWR.iml" />
       <module fileurl="file://$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" filepath="$PROJECT_DIR$/DWR/DWRExample-N01/DWRExample-N01.iml" />
       <module fileurl="file://$PROJECT_DIR$/EJB/EJB.iml" filepath="$PROJECT_DIR$/EJB/EJB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_005/Expomap.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_005/Expomap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring/GS_Spring.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring/GS_Spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_001/GS_Spring_001.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_001/GS_Spring_001.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_002/GS_Spring_002.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_002/GS_Spring_002.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_003/GS_Spring_003.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_003/GS_Spring_003.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_004/src/GS_Spring_004.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_004/src/GS_Spring_004.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_006/GS_Spring_006.iml" filepath="$PROJECT_DIR$/Spring/MVC/GS_Spring_006/GS_Spring_006.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_10_Validation/GS_Spring_10_Validation.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_10_Validation/GS_Spring_10_Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_11_BeanValidation/GS_Spring_11_BeanValidation.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_11_BeanValidation/GS_Spring_11_BeanValidation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_13_EL_Function/GS_Spring_13_EL_Function.iml" filepath="$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_13_EL_Function/GS_Spring_13_EL_Function.iml" />

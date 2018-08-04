@@ -36,12 +36,7 @@
         <module name="ejb-lib-module" />
         <module name="ejb-war-module" />
         <module name="ejb-war2-module" />
-        <module name="Expomap" />
         <module name="GS_JSF_2" />
-        <module name="GS_Spring_001" />
-        <module name="GS_Spring_002" />
-        <module name="GS_Spring_003" />
-        <module name="GS_Spring_006" />
         <module name="GS_Spring_10_Validation" />
         <module name="GS_Spring_11_BeanValidation" />
         <module name="GS_Spring_13_EL_Function" />
@@ -381,7 +376,7 @@
       <module name="WebSecurityExample-N00" target="1.6" />
       <module name="WebSecurityExample-N01" target="1.6" />
       <module name="WebSecurityExample-N02" target="9" />
-      <module name="WebSecurityExample-N03" target="1.6" />
+      <module name="WebSecurityExample-N03" target="9" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />
       <module name="WebServices" target="1.5" />

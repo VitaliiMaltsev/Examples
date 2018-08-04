@@ -13,12 +13,12 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>GS_Spring_001</module>
-        <module>GS_Spring_002</module>
-        <module>GS_Spring_003</module>
-        <module>GS_Spring_004</module>
-        <module>GS_Spring_005</module>
-        <module>GS_Spring_006</module>
+        <!--<module>GS_Spring_001</module>-->
+        <!--<module>GS_Spring_002</module>-->
+        <!--<module>GS_Spring_003</module>-->
+        <!--<module>GS_Spring_004</module>-->
+        <!--<module>GS_Spring_005</module>-->
+        <!--<module>GS_Spring_006</module>-->
     </modules>
 
 
