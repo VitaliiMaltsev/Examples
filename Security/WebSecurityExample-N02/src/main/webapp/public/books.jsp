@@ -8,7 +8,7 @@
     <c:forEach items="${books}" var="book">
         <li><img src="../img/books.jpg"> &nbsp; <span
                 style="color: #00008b; font-size: 20px;">${book.author} - ${book.title}</span> &nbsp; <a
-                href="/order?bookId=${book.number}">order book</a></li>
+                href="order?bookId=${book.number}">order book</a></li>
     </c:forEach>
 </ul>
 
