@@ -167,6 +167,10 @@
         <module name="war-ejb" />
         <module name="war-ejb (1) (edu.javacourse.ejb.stateful-ejb)" />
         <module name="WebSecurity" />
+        <module name="WebSecurityExample-N00" />
+        <module name="WebSecurityExample-N01" />
+        <module name="WebSecurityExample-N02" />
+        <module name="WebSecurityExample-N03" />
         <module name="WebSecurityForm" />
         <module name="WebSecurityFormLDAP" />
         <module name="ZKExample01" />
@@ -374,6 +378,10 @@
       <module name="war-ejb (1) (edu.javacourse.ejb.stateful-ejb)" target="1.7" />
       <module name="Web" target="1.5" />
       <module name="WebSecurity" target="1.7" />
+      <module name="WebSecurityExample-N00" target="1.6" />
+      <module name="WebSecurityExample-N01" target="1.6" />
+      <module name="WebSecurityExample-N02" target="1.6" />
+      <module name="WebSecurityExample-N03" target="1.6" />
       <module name="WebSecurityForm" target="1.7" />
       <module name="WebSecurityFormLDAP" target="1.7" />
       <module name="WebServices" target="1.5" />

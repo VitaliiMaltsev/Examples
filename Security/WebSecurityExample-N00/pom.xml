@@ -25,6 +25,7 @@
 
 
     <build>
+        <finalName>wse00w</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -31,9 +31,24 @@
         <auth-constraint>
             <description>Available only for users with tomcat role</description>
             <role-name>tomcat</role-name>
+            <role-name>new_role</role-name>
+        </auth-constraint>
+
+    </security-constraint>
+    <security-constraint>
+        <display-name>Super Private area</display-name>
+        <web-resource-collection>
+            <web-resource-name>private</web-resource-name>
+            <description>Super Private area location</description>
+            <url-pattern>/super-private/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Available only for users with super role</description>
+            <role-name>super-role</role-name>
         </auth-constraint>
     </security-constraint>
-
 
     <login-config>
         <auth-method>BASIC</auth-method>

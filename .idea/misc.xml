@@ -49,6 +49,10 @@
     <file type="web" url="file://$PROJECT_DIR$/Portlet/SimplePortlet" />
     <file type="web" url="file://$PROJECT_DIR$/Security/ClientAuthentication" />
     <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurity" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N00" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N01" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N02" />
+    <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" />
     <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityForm" />
     <file type="web" url="file://$PROJECT_DIR$/Security/WebSecurityFormLDAP" />
     <file type="web" url="file://$PROJECT_DIR$/Spring/MVC/GS_Spring_001" />

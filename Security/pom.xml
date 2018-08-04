@@ -14,6 +14,10 @@
         <module>WebSecurity</module>
         <module>WebSecurityForm</module>
         <module>WebSecurityFormLDAP</module>
+        <module>WebSecurityExample-N00</module>
+        <module>WebSecurityExample-N01</module>
+        <module>WebSecurityExample-N02</module>
+        <module>WebSecurityExample-N03</module>
     </modules>
 
 </project>

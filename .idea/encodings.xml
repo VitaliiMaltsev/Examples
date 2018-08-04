@@ -63,6 +63,10 @@
     <file url="file://$PROJECT_DIR$/Portlet/SimplePortlet" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Security/ClientAuthentication" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Security/WebSecurity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N00" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Security/WebSecurityExample-N03" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Security/WebSecurityForm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Security/WebSecurityFormLDAP" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/GS_Spring/GS_Spring_17_JUnit" charset="UTF-8" />
